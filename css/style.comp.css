@@ -1,0 +1,192 @@
+:root {
+  --ff-primary: "Red Hat Display", sans-serif;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+  --color-primary-100: hsl(225, 100%, 94%);
+  --color-primary-150: hsl(245, 83%, 68%);
+  --color-primary-200: hsl(245, 75%, 52%);
+  --color-neutral-100: hsl(225, 100%, 98%);
+  --color-neutral-200: hsl(224, 23%, 55%);
+  --color-neutral-300: hsl(223, 47%, 23%);
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  font-family: var(--ff-primary);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  outline-color: transparent;
+}
+
+.order-summary {
+  min-width: 40rem;
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0px 3rem 4rem -1.2rem rgba(56, 41, 224, 0.2);
+}
+@media only screen and (max-width: 30em) {
+  .order-summary {
+    margin: 2.5rem;
+  }
+}
+.order-summary__details {
+  padding: 5rem;
+}
+@media only screen and (max-width: 30em) {
+  .order-summary__details {
+    padding: 4rem 3.5rem;
+  }
+}
+.order-summary__details--description {
+  margin-block-start: 2rem;
+  padding-inline: 2rem;
+}
+.order-summary__details--plan {
+  margin-block-start: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+.order-summary__details--plan .plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-inline-start: 2rem;
+}
+.order-summary__details--plan .plan-change {
+  margin-inline-start: auto;
+  text-decoration: underline;
+}
+.order-summary__details--btn {
+  width: 100%;
+  display: inline-block;
+  margin-block-start: 3.5rem;
+  padding-block: 1.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0 2rem 2.5rem rgba(56, 41, 224, 0.3);
+}
+.order-summary__details--cancel-order {
+  margin-block-start: 3.5rem;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-100);
+}
+@media only screen and (max-width: 30em) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.order-summary {
+  background-color: var(--color-white);
+}
+.order-summary__details {
+  text-align: center;
+}
+.order-summary__details--heading {
+  font-size: 2.8rem;
+  font-weight: var(--fw-bolder);
+}
+.order-summary__details--description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-neutral-200);
+}
+@media only screen and (max-width: 30em) {
+  .order-summary__details--description {
+    font-size: 1.8rem;
+  }
+}
+.order-summary__details--plan {
+  background-color: var(--color-neutral-100);
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+}
+.order-summary__details--plan .plan-name {
+  font-weight: var(--fw-bolder);
+}
+.order-summary__details--plan .plan-amount {
+  color: var(--color-neutral-200);
+  font-weight: var(--fw-bold);
+}
+.order-summary__details--plan .plan-change {
+  font-weight: var(--fw-bolder);
+  color: var(--color-primary-200);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order-summary__details--plan .plan-change:hover {
+  text-decoration: none;
+  color: var(--color-primary-150);
+}
+.order-summary__details--btn {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bolder);
+  color: var(--color-neutral-100);
+  background-color: var(--color-primary-200);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order-summary__details--btn:hover {
+  background-color: var(--color-primary-150);
+}
+.order-summary__details--cancel-order {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bolder);
+  color: var(--color-neutral-200);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order-summary__details--cancel-order:hover {
+  color: var(--color-black);
+}
+
+/*# sourceMappingURL=style.comp.css.map */

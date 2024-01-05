@@ -1,0 +1,52 @@
+:root {
+  --ff-primary: "Red Hat Display", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --color-primary-100: hsl(225, 100%, 94%);
+  --color-primary-150: hsl(245, 83%, 68%);
+  --color-primary-200: hsl(245, 75%, 52%);
+
+  --color-neutral-100: hsl(225, 100%, 98%);
+  --color-neutral-200: hsl(224, 23%, 55%);
+  --color-neutral-300: hsl(223, 47%, 23%);
+
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  font-family: var(--ff-primary);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-100);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  outline-color: transparent;
+}
